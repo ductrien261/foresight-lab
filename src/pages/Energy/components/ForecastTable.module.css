@@ -1,0 +1,11 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.yours {
+  color: var(--accent-ink) !important;
+}

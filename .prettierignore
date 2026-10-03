@@ -1,0 +1,4 @@
+dist
+public/py
+src/data/*.json
+python

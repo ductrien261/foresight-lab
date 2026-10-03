@@ -1,0 +1,144 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.presets {
+  display: flex;
+  gap: 6px;
+}
+
+.preset {
+  flex: 1;
+  min-height: 36px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.preset[data-state='on'] {
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  background: var(--accent-tint);
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rateHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.rateLabel {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rateValue {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  touch-action: none;
+  user-select: none;
+}
+
+.slider[data-disabled] {
+  opacity: 0.45;
+}
+
+.track {
+  position: relative;
+  flex-grow: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--line);
+}
+
+.range {
+  position: absolute;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+.thumb {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+  cursor: grab;
+}
+
+.scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+
+.source {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.readout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  row-gap: 10px;
+  margin: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line-2);
+  font-size: 14px;
+}
+
+.readout dt {
+  color: var(--muted);
+}
+
+.readout dd {
+  margin: 0;
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.tool {
+  color: var(--tool);
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  min-height: 32px;
+}
+
+.check input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}

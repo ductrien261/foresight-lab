@@ -1,0 +1,82 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgb(20 32 29 / 0.42);
+  z-index: 40;
+}
+
+.content {
+  position: fixed;
+  z-index: 41;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(500px, calc(100vw - 32px));
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 20px 48px rgb(20 32 29 / 0.22);
+}
+
+.step {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-ink);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 8px 0 10px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.body {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #3d4845;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.roleBtn {
+  justify-content: flex-start;
+}
+
+.roleBtn[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent-tint);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line);
+}
+
+.dotOn {
+  width: 22px;
+  border-radius: 4px;
+  background: var(--accent);
+}

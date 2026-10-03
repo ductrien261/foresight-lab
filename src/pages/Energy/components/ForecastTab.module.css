@@ -1,0 +1,72 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Chart card ────────────────────────────────────── */
+.chartCard {
+  min-width: 0;
+}
+
+.chartTabs {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border-bottom: 1px solid var(--line-2);
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.chartTab {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 16px 0 0;
+  min-height: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.1s, border-color 0.1s;
+  margin-right: 8px;
+}
+
+.chartTab:hover { color: var(--ink); }
+
+.chartTabActive {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+  font-weight: 600;
+}
+
+.checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-left: auto;
+}
+
+.bandCheck {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--muted);
+  padding-bottom: 4px;
+}
+
+.bandCheck input {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--accent);
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #3d4845;
+}

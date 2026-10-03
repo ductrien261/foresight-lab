@@ -1,0 +1,184 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 20px;
+  align-items: start;
+}
+
+.warn { margin-bottom: 20px; }
+
+.bars {
+  list-style: none;
+  margin: 8px 0 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) 72px;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.barName { font-weight: 500; }
+
+.track {
+  position: relative;
+  height: 30px;
+  background: var(--surface-2);
+  border-radius: 4px;
+}
+
+.fill,
+.over {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 3px;
+}
+
+.fill  { left: 0; background: #c9d3cf; }
+.over  { background: var(--accent); }
+
+.supplyLine {
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  width: 2px;
+  background: var(--tool);
+}
+
+.gap {
+  text-align: right;
+  font-weight: 600;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.gapOver {
+  text-align: right;
+  font-weight: 600;
+  color: var(--bad);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Active / selected scenario row */
+.barRowActive .barName {
+  font-weight: 700;
+  color: var(--accent-ink);
+}
+
+.barRowActive .fill {
+  background: var(--accent);
+  opacity: 0.35;
+}
+
+/* Active table row */
+.rowActive td,
+.rowActive th {
+  background: var(--accent-tint);
+}
+
+.fine {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.docsHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.checked { font-size: 12px; color: var(--muted); }
+
+.doc {
+  border-top: 1px solid var(--line-2);
+  margin-top: 14px;
+  padding-top: 14px;
+}
+
+.docTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.docCode {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pill,
+.pillOn {
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 3px 8px;
+  white-space: nowrap;
+  background: var(--chip);
+  color: var(--muted);
+}
+
+.pillOn {
+  background: var(--tool-tint);
+  color: var(--tool);
+}
+
+.docTitle { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+.targets {
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.target {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.target dt { color: #3d4845; }
+
+.target dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}
+
+.inputLabel {
+  display: block;
+  font-size: 13px;
+  margin: 14px 0 6px;
+}
+
+.input {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid #cbd3cf;
+  border-radius: 8px;
+  font-size: 14px;
+  font: inherit;
+}
+
+@media (max-width: 1100px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+}

@@ -1,0 +1,54 @@
+{
+ "checked": "2026-10-01",
+ "toeToKwh": 11630,
+ "documents": [
+  {
+   "id": "qd893",
+   "code": "QĐ 893/QĐ-TTg",
+   "title": "Quy hoạch tổng thể về năng lượng quốc gia thời kỳ 2021–2030, tầm nhìn 2050",
+   "url": "https://moit.gov.vn/tin-tuc/hoat-dong/phe-duyet-quy-hoach-tong-the-ve-nang-luong-quoc-gia-thoi-ky-2021-2030-tam-nhin-den-nam-2050.html",
+   "basis": "primary",
+   "targets": [
+    {
+     "label": "Cung năng lượng sơ cấp 2030",
+     "year": 2030,
+     "value": 155,
+     "unit": "triệu TOE",
+     "comparable": true
+    },
+    {
+     "label": "Nhu cầu năng lượng cuối cùng 2030",
+     "year": 2030,
+     "value": 107,
+     "unit": "triệu TOE",
+     "comparable": false
+    }
+   ]
+  },
+  {
+   "id": "qd768",
+   "code": "QĐ 768/QĐ-TTg, 15/4/2025",
+   "title": "Điều chỉnh Quy hoạch phát triển điện lực quốc gia (Quy hoạch điện VIII)",
+   "url": "https://tapchicongthuong.vn/thu-tuong-phe-duyet-dieu-chinh-quy-hoach-dien-viii-139491.htm",
+   "basis": "electricity",
+   "targets": [
+    {
+     "label": "Điện thương phẩm 2030",
+     "year": 2030,
+     "low": 500.4,
+     "high": 557.8,
+     "unit": "tỷ kWh",
+     "comparable": false
+    },
+    {
+     "label": "Điện sản xuất và nhập khẩu 2030",
+     "year": 2030,
+     "low": 560.4,
+     "high": 624.6,
+     "unit": "tỷ kWh",
+     "comparable": false
+    }
+   ]
+  }
+ ]
+}

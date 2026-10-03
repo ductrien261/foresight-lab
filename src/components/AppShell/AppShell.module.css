@@ -1,0 +1,172 @@
+/* ── App wrapper ───────────────────────────────────── */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Top header bar ────────────────────────────────── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 28px;
+  height: 60px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+/* ── Brand (logo) ──────────────────────────────────── */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.divider {
+  width: 1px;
+  height: 18px;
+  background: var(--line);
+}
+
+.tagline {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ── Centre nav ────────────────────────────────────── */
+.centreNav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  transition: background 0.12s, color 0.12s;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  background: var(--chip);
+  color: var(--ink);
+}
+
+.navLink:global(.active) {
+  background: var(--chip);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.navIcon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+/* ── Right actions ─────────────────────────────────── */
+.rightActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* ── Main content area ─────────────────────────────── */
+.main {
+  flex: 1;
+  padding: 32px 36px 56px;
+  min-width: 0;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.loading {
+  color: var(--muted);
+}
+
+/* ── Mobile horizontal scroll nav ─────────────────── */
+.mobileNav {
+  display: none;
+}
+
+.mobileLink {
+  flex: 0 0 auto;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.mobileLink:global(.active) {
+  border-color: var(--ink);
+  color: var(--ink);
+  font-weight: 600;
+  background: var(--chip);
+}
+
+/* ── Responsive ────────────────────────────────────── */
+@media (max-width: 860px) {
+  .header {
+    padding: 0 16px;
+    height: 56px;
+  }
+
+  .tagline,
+  .divider {
+    display: none;
+  }
+
+  .centreNav {
+    display: none;
+  }
+
+  .mobileNav {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    margin: -4px 0 20px;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .mobileNav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main {
+    padding: 20px 16px 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 15px;
+  }
+}

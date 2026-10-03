@@ -1,0 +1,79 @@
+:root {
+  --ground: #f3f5f4;
+  --surface: #ffffff;
+  --surface-2: #f7f9f8;
+  --ink: #14201d;
+  --ink-2: #2c3835;
+  --muted: #56625e;
+  --line: #dde3e0;
+  --line-2: #e6ebe8;
+  --chip: #eef1ef;
+  --accent: #c4501a;
+  --accent-ink: #9a3a10;
+  --accent-tint: #fbefe8;
+  --band: #f6dfd2;
+  --tool: #1d4e89;
+  --tool-tint: #e3eaf3;
+  --good: #1f7a4d;
+  --warn-bg: #fff7e6;
+  --warn-line: #f0d49a;
+  --warn-ink: #5a4310;
+  --bad: #b42318;
+  --bad-bg: #fdecea;
+  --bar-muted: #aeb9b4;
+  --radius: 10px;
+  --font: 'Be Vietnam Pro', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--tool);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--tool);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
