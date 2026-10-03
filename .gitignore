@@ -6,3 +6,13 @@ public/py
 *.log
 __pycache__
 .pytest_cache
+
+# Raw data files (kept locally, not tracked)
+data/
+*.csv
+*.xlsx
+
+# IDE / editor config
+.claude/
+.idea/
+.vscode/
