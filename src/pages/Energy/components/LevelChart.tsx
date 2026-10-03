@@ -2,12 +2,10 @@ import chart from '@/components/charts/charts.module.css';
 import { LineChart, type LineSeries, type Point } from '@/components/charts/LineChart';
 import { ENERGY } from '@/content/vi';
 import { formatNumber } from '@/utils/format';
-import { describeLongTrend } from '@/utils/longTrend';
 import { SUPPLY_2030_BKWH } from '@/utils/plans';
 
 import { DATA, PLAN_YEAR } from '../hooks/useScenario';
 import { yearTicks } from './forecastPoints';
-import s from './ForecastTab.module.css';
 
 interface LevelChartProps {
   /** Main forecast (recursive GM(1,1) trend). */
